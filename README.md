@@ -1,6 +1,6 @@
 # Protop
 
-See individual service readme's for more info.
+See each individual service readme for more info.
 
 * [Port GW](./portgw)
 * [Port Store](./portstore)
