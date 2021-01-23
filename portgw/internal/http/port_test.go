@@ -18,12 +18,11 @@ import (
 	mock_processor "github.com/hugorut/protop/portgw/internal/processor/mocks"
 )
 
-
 //go:generate mockgen -destination mocks/port.go -source ./port.go
 func TestHandler(t *testing.T) {
 	logger, _ := test.NewNullLogger()
 	testFileLocation := "/test/location"
-	body := []byte(fmt.Sprintf(`{"location": "%s"}`, testFileLocation) )
+	body := []byte(fmt.Sprintf(`{"location": "%s"}`, testFileLocation))
 
 	t.Run("ProcessFile", func(t *testing.T) {
 		t.Run("With valid provider", func(t *testing.T) {

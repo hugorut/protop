@@ -52,7 +52,6 @@ func TestProvider(t *testing.T) {
 					assert.EqualValues(t, ErrorInvalidProvider, err)
 				}
 
-
 				assert.EqualValues(t, tt.want, got, "unexpected processor provided")
 			})
 		}
